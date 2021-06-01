@@ -1,0 +1,68 @@
+{
+  "info": {
+    "title": "Test",
+    "version": "0.0.1",
+    "baseUri": "http://example.org/"
+  },
+  "definitions": {
+    "Test": {
+      "primaryKey": "id",
+      "required": [ ],
+      "pii": [ ],
+      "wordLexicon": [ ],
+      "properties": {
+        "id": {
+          "datatype": "string",
+          "collation": "http://marklogic.com/collation/codepoint"
+        },
+        "nested": {
+          "$ref": "#/definitions/Test-2"
+        }
+      }
+    },
+    "Test-2": {
+      "required": [ ],
+      "pii": [ ],
+      "elementRangeIndex": [ ],
+      "rangeIndex": [ ],
+      "wordLexicon": [ ],
+      "properties": {
+        "nested": {
+          "$ref": "#/definitions/Test-3"
+        }
+      }
+    },
+    "Test-3": {
+      "required": [ ],
+      "pii": [ ],
+      "elementRangeIndex": [ ],
+      "rangeIndex": [ ],
+      "wordLexicon": [ ],
+      "properties": {
+        "nested": {
+          "$ref": "#/definitions/Test-4"
+        }
+      }
+    },
+    "Test-4": {
+      "required": [ ],
+      "pii": [ ],
+      "elementRangeIndex": [ ],
+      "rangeIndex": [ ],
+      "wordLexicon": [ ],
+      "properties": {
+        "nested": {
+          "$ref": "#/definitions/Test-5"
+        }
+      }
+    },
+    "Test-5": {
+      "required": [ ],
+      "pii": [ ],
+      "elementRangeIndex": [ ],
+      "rangeIndex": [ ],
+      "wordLexicon": [ ],
+      "properties": {}
+    }
+  }
+}

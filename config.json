@@ -1,0 +1,18 @@
+{
+	"source": "template.entity.json",
+	"target": "Test.entity.json",
+	"props": [
+		{
+			"title": "Test",
+			"total": 500
+		},
+		{
+			"title": "Test-5",
+			"total": 50
+		}
+	],
+	"types": [
+		{ "datatype": "string", "collation": "http://marklogic.com/collation/codepoint"},
+		{ "datatype": "integer" }
+	]
+}
