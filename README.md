@@ -1,6 +1,6 @@
 # data-hub-entity-generator
 
-With Node.js instasll, run from root directory:
+With Node.js installed, run from root directory:
 ```
 node generate [optional config file reference]
 ```
