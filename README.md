@@ -2,7 +2,7 @@
 
 Script for adding a configurable number of properties to the definitions of a [MarkLogic Data Hub](https://github.com/marklogic/marklogic-data-hub) entity artifact.
 
-## Running script
+## Running
 
 With [Node.js](https://nodejs.org/) installed, run from root directory:
 ```
