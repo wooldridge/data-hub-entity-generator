@@ -13,7 +13,7 @@ node generate [myconfig.json]
 
 In no config file specified, `config.json` is used.
 
-**config.json:**
+**[config.json](https://github.com/wooldridge/data-hub-entity-generator/blob/master/config.json):**
 ```
 {
 	"source": "template.entity.json", // Add properties to this template file
