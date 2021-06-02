@@ -1,21 +1,23 @@
 # data-hub-entity-generator
 
-Script for adding a configurable number of properties to the definitions of a [MarkLogic Data Hub](https://github.com/marklogic/marklogic-data-hub) entity.
+Script for adding a configurable number of properties to the definitions of a [MarkLogic Data Hub](https://github.com/marklogic/marklogic-data-hub) entity artifact.
 
 ## Running script
 
-With Node.js installed, run from root directory:
+With [Node.js](https://nodejs.org/) installed, run from root directory:
 ```
-node generate [optional config file reference, config.json used by default]
+node generate [myconfig.json]
 ```
 
 ## Setup
 
+In no config file specified, `config.json` is used.
+
 **config.json:**
 ```
 {
-	"source": "template.entity.json", // Add to this template file
-	"target": "Test.entity.json",     // Save result to this file
+	"source": "template.entity.json", // Add properties to this template file
+	"target": "Test.entity.json",     // Save enricxhed template to this file
 	"defs": [
 		{
 			"title": "Test",   // Add properties to this definition
@@ -34,4 +36,4 @@ node generate [optional config file reference, config.json used by default]
 }
 ```
 
-**template.entity.json:** Initial representation of entity to populate.
+**template.entity.json:** Initial representation of entity to populate with properties.
