@@ -17,14 +17,14 @@ In no config file specified, `config.json` is used.
 ```
 {
 	"source": "template.entity.json", // Add properties to this template file
-	"target": "Test.entity.json",     // Save enricxhed template to this file
+	"target": "Test.entity.json",     // Save enriched template data to this file
 	"defs": [
 		{
 			"title": "Test",   // Add properties to this definition
 			"props": 500       // Add this number of properties
 		},
 		{
-			"title": "Test-5", // Add properties to this definition
+			"title": "Test-5", // Also add properties to this definition
 			"props": 50        // Add this number of properties
 		}
 	],
