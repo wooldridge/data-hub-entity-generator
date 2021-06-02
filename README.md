@@ -14,16 +14,16 @@ node generate [optional config file reference, config.json used by default]
 **config.json:**
 ```
 {
-	"source": "template.entity.json", // Use this template file
-	"target": "Test.entity.json",     // Save to this file
-	"props": [
+	"source": "template.entity.json", // Add to this template file
+	"target": "Test.entity.json",     // Save result to this file
+	"defs": [
 		{
 			"title": "Test",   // Add properties to this definition
-			"total": 500       // Add this number of properties
+			"props": 500       // Add this number of properties
 		},
 		{
 			"title": "Test-5", // Add properties to this definition
-			"total": 50        // Add this number of properties
+			"props": 50        // Add this number of properties
 		}
 	],
 	// Cycle through these data types when generating properties
