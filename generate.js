@@ -1,11 +1,11 @@
-const CONFIG = "config.json";
+const CONFIG = "config.json"; // default config
 const fs  = require("fs");
 const myArgs = process.argv.slice(2);
 
 // Get config values
 let config = myArgs[0] !== undefined ? myArgs[0] : CONFIG;
 config = fs.readFileSync('./' + config).toString();
-config = JSON.parse(config, null, " ");
+config = JSON.parse(config);
 
 // Read source template
 source = fs.readFileSync('./' + config.source).toString();
@@ -14,10 +14,8 @@ result = JSON.parse(source);
 // Generate object of properties
 const getPropsObj = function (total) {
 	let obj = {};
-	let count = 0;
 	for (let i = 1; i <= total; i++) {
 		obj["prop-" + i] = config.types[i % config.types.length];
-		count++;
 	}
 	return obj;
 }
