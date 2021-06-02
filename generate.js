@@ -23,10 +23,10 @@ const getPropsObj = function (total) {
 }
 
 // Handle each entity definition that needs properties generated
-config.props.forEach((p, i) => {
-	let propsObj = getPropsObj(p.total);
-	let newProps = Object.assign(result.definitions[p.title].properties, propsObj);
-	result.definitions[p.title].properties = newProps;
+config.defs.forEach((d, i) => {
+	let propsObj = getPropsObj(d.props);
+	let newProps = Object.assign(result.definitions[d.title].properties, propsObj);
+	result.definitions[d.title].properties = newProps;
 })
 
 // Write result

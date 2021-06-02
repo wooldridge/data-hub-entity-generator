@@ -1,14 +1,14 @@
 {
 	"source": "template.entity.json",
 	"target": "Test.entity.json",
-	"props": [
+	"defs": [
 		{
 			"title": "Test",
-			"total": 500
+			"props": 500
 		},
 		{
 			"title": "Test-5",
-			"total": 50
+			"props": 50
 		}
 	],
 	"types": [
