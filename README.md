@@ -36,4 +36,4 @@ In no config file specified, `config.json` is used.
 }
 ```
 
-**[template.entity.json](https://github.com/wooldridge/data-hub-entity-generator/blob/master/template.entity.json):** Initial representation of entity to populate.
+**[template.entity.json](https://github.com/wooldridge/data-hub-entity-generator/blob/master/template.entity.json):** Default source representation of entity to populate. You can create your own and reference from `config.json`.
